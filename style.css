@@ -22,7 +22,8 @@ body {
 }
 
 main,
-.login-container {
+.login-container,
+.error-container {
     flex: 1 0 auto;
     /* Đảm bảo nội dung chính mở rộng */
 }
@@ -152,6 +153,62 @@ main,
     text-decoration: underline;
 }
 
+/* ===== TRANG ERROR (page-error) ===== */
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.error-box {
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.error-title {
+    color: #c8102e;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.error-message {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.error-message a {
+    color: #c8102e;
+    text-decoration: none;
+}
+
+.error-message a:hover {
+    text-decoration: underline;
+}
+
+.call-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #c8102e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.call-btn:hover {
+    background: #a50f25;
+}
+
 /* ===== FOOTER CHUNG ===== */
 .site-footer {
     background: #222;
@@ -175,5 +232,13 @@ main,
 
     .services h3 {
         font-size: 1.7rem;
+    }
+
+    .error-title {
+        font-size: 32px;
+    }
+
+    .error-message {
+        font-size: 18px;
     }
 }
